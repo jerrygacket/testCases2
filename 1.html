@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+1 (JavaScript). На странице есть абзац, кнопка 1 и кнопка 2.
+Напишите код, который по нажатию сначала на кнопку 1, а потом на кнопку 2 скрывает абзац, 
+если он раскрыт, и раскрывает, если он скрыт.
+</p>
+<p id="p1">абзац</p>
+<button onclick="show_hide('p1');"> кнопка 1</button>
+<button onclick="show_hide('p1');">кнопка 2</button>
+<script>
+    function show_hide(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem.style.visibility === 'hidden') {
+            elem.style.visibility = 'visible';
+            return;
+        }
+
+        elem.style.visibility = 'hidden';
+    }
+</script>
+</body>
+</html>
