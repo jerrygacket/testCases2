@@ -20,5 +20,5 @@ INSERT INTO `mysql_test_a` (`id`, `login`, `ev_text`, `reg_date`) VALUES ('6', '
 SELECT login, ev_text FROM mysql_test_a WHERE reg_date IN (SELECT MAX(reg_date) FROM mysql_test_a GROUP BY login);
 
 login 	ev_text
-John	ev1
-Karl	ev6
+John	ev2
+Karl	ev5
